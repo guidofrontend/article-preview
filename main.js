@@ -25,7 +25,9 @@ function validator() {
 }
 
 function displaySocialMenu() {
-    share.addEventListener('click', validator)
+    if (window.innerWidth < 426) {
+        share.addEventListener('click', validator)
+    }
 }
 
 displaySocialMenu()

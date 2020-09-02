@@ -91,6 +91,11 @@ p strong {
     margin-right: 32px;
 }
 
+.social:hover {
+    cursor: pointer;
+}
+
+
 .redes {
     font-family: 'manrope';
     color: hsl(212, 23%, 69%);
