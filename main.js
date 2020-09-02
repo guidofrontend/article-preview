@@ -24,9 +24,27 @@ function validator() {
     }  
 }
 
+function validatorBig() {
+    if (redes.style.display === 'none') {
+        redes.className = 'floating'
+        redes.innerHTML = `<span>share</span>
+        <a href="#" class="face"></a>
+        <a href="#" class="twitt"></a>
+        <a href="#" class="pinter"></a>`
+        redes.style.display = ''
+        contact.prepend(redes)
+    }
+    else {
+        redes.style.display = 'none'
+    }
+}
+
 function displaySocialMenu() {
     if (window.innerWidth < 426) {
         share.addEventListener('click', validator)
+    }
+    else {
+        share.addEventListener('click', validatorBig)
     }
 }
 

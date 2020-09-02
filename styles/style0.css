@@ -60,6 +60,7 @@ p strong {
 
 .personal {
     display: flex;
+    align-items: center;
 }
 
 .avatarContain {
@@ -111,6 +112,26 @@ p strong {
     justify-content: space-around;
 }
 
+.floating {
+    font-family: 'manrope';
+    color: hsl(212, 23%, 69%);
+    background-color: hsl(217, 19%, 35%);
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 1.2em;
+    justify-content: space-around;
+    border-radius: 10px;
+    position: relative;
+    left: 30%;
+    bottom: 60px;
+    z-index: 1;
+    margin-right: -228px;
+}
+
 .face {
     width: 24px;
     height: 24px;
@@ -142,4 +163,25 @@ p strong {
     background-color: hsl(217, 19%, 35%);
     background-image: url('../images/icon-pinterest.svg');
     margin-left: 1em;
+}
+
+@media screen and (min-width: 640px) {
+    .card {
+        max-width: 740px;
+        margin: 240px auto;
+        min-height: 280px;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    .workPicContain {
+        max-height: 286px;
+        overflow: initial;
+        height: 100%;
+    }
+
+    .workPic {
+        object-fit: cover;
+    }
 }
